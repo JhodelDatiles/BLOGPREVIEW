@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:  hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 380px;
+  height: 500px;
+  border-radius: 10px;
+}
+.btn{
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* Larger shadow to the right on hover */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+.btn:hover {
+  box-shadow: none; /* Dark shadow to the right in default state */
+  transform: translateX(-3px); /* Moves the button slightly to the left on hover */
+}
+.learn, 
+.txt-one, 
+.txt-two, 
+.txt-three, 
+.user {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.free-img{
+  border-radius: 10px;
+}
+.learn{
+  background-color: hsl(47, 88%, 63%) ;
+  padding: 3px 8px;
+  align-self: flex-start;
+  font-weight: 800;
+}
+.txt-one{
+  font-size: 10px;
+  font-weight: 800;
+  align-self: flex-start;
+}
+.txt-two{
+  color: hsl(47, 88%, 63%);
+  align-self: flex-start;
+  cursor: pointer;
+}
+.txt-three{
+  color: hsl(0, 0%, 42%);
+  align-self: flex-start;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+  width: 300px;
+}
+.user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: auto;
+}
+.user-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Add space between the image and the name */
+}
+
+.user-name {
+  font-size: 10px;
+  font-weight: 600;
+}
+.attribution{
+  margin-top: 20px;
+}
+.attribution a{
+  text-decoration: none;
+}
+@media screen and (max-width: 375px){
+  .container{
+    width: 330px;
+    height: 470px;
+    padding: 0;
+  }
+  .free-img{
+    width: 260px;
+    height: 560px;
+  }
+  .txt-three{
+    font-size: 12px;
+    line-height: 1.6;
+    width: 250px;
+  }
+  .user-name {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .user-img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  .attribution{
+    margin-top: 20px;
+    text-align: center;
+  }
+}
