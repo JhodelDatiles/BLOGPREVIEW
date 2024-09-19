@@ -24,6 +24,9 @@ body{
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* Larger shadow to the right on hover */
   transition: all 0.3s ease; /* Smooth transition on hover */
 }
+.btn:active{
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* Larger shadow to the right on hover */
+}
 .btn:hover {
   box-shadow: none; /* Dark shadow to the right in default state */
   transform: translateX(-3px); /* Moves the button slightly to the left on hover */
